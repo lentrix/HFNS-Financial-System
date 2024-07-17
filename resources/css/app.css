@@ -1,0 +1,42 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn-primary{
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+}
+
+@layer components {
+    ._btn-white {
+      @apply ml-auto p-2 flex items-center justify-center text-gray-800 bg-blue-400 border border-transparent rounded-md font-medium w-[100px] hover:bg-blue-200 hover:no-underline;
+    }
+    ._btn-bordered {
+      @apply ml-auto p-2 flex items-center justify-center text-gray-100 border border-gray-50 rounded-md font-medium text-center cursor-pointer w-[100px] bg-blue-400 hover:bg-blue-500 hover:text-black hover:no-underline;
+    }
+    ._input {
+      @apply text-black mb-3 w-full bg-slate-50 py-2 px-3 rounded-md outline-none border border-gray-300 focus:border-gray-400 focus:border;
+    }
+    ._title {
+      @apply font-semibold text-gray-900 text-left w-full text-2xl mb-4;
+    }
+    ._sub-title {
+      @apply text-gray-900  font-semibold text-sm mb-2;
+    }
+  }
+
+  .bg-maroon-800 {
+    background-color: #943131;
+}
+.bg-maroon-100 {
+    background-color: #8b4e4e;
+}
+
+.hover\:bg-maroon-700:hover {
+    background-color: #992a2a;
+}
+
+.active\:bg-maroon-900:active {
+    background-color: #660000;
+}
