@@ -129,6 +129,11 @@ function toggleWidth() {
                                 Dashboard
                             </ResponsiveNavLink>
                         </div>
+                        <div class="pt-2 pb-3 space-y-1">
+                            <ResponsiveNavLink :href="route('students')" :active="route().current('students')">
+                                Students
+                            </ResponsiveNavLink>
+                        </div>
                         <!-- Responsive Settings Options -->
                         <div class="pt-4 pb-1 border-t border-gray-200">
                             <div class="px-4">
