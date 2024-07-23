@@ -20,7 +20,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        return inertia('Students/Create');
     }
 
     /**
@@ -28,7 +28,11 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validation...
+
+        $student = Student::create($request->all());
+
+        return $student;
     }
 
     /**

@@ -1,7 +1,12 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import Sidebar from '@/Layouts/Sidebar.vue';
-import { Head } from '@inertiajs/vue3';
+import { Head, router } from '@inertiajs/vue3';
+
+function openCreateStudent() {
+    router.get('/students/create')
+}
+
 </script>
 
 <template>
@@ -9,7 +14,15 @@ import { Head } from '@inertiajs/vue3';
 
     <Sidebar>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Students</h2>
+            <div class="flex justify-between">
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">Students</h2>
+                <div class="flex align-center">
+                    <button class="btn-primary" @click="openCreateStudent()">
+                        <font-awesome-icon icon="fa-solid fa-user-plus" /> &nbsp;
+                        Create Student
+                    </button>
+                </div>
+            </div>
         </template>
 
         <div class="py-12">

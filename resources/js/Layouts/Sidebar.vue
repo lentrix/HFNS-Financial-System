@@ -39,7 +39,7 @@ function toggleWidth() {
                 <!-- Sidebar -->
                 <div id="branding" class="mt-2" :class="hidden">
                     <div class="flex items-center justify-center h-14 mb-5 border-gray-800">
-                            <img src="images/hfns_logo.png" class="w-24 h-24 object-contain" />
+                            <img src="/images/hfns_logo.png" class="w-24 h-24 object-contain" />
                     </div>
 
                 </div>
@@ -152,8 +152,8 @@ function toggleWidth() {
                     </div>
                 </nav>
                 <!-- Header -->
-                <header class="bg-white shadow" v-if="$slots.header">
-                  <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header class="bg-gray-100 shadow" v-if="$slots.header">
+                  <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
                     <slot name="header" />
                   </div>
                 </header>
